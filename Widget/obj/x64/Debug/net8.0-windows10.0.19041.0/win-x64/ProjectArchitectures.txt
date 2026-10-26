@@ -1,0 +1,1 @@
+C:\Users\L\source\repos\Widget\Widget\Widget.csproj;x64
