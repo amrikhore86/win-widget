@@ -10,33 +10,43 @@
     Title="Widget">
 
     <Window.SystemBackdrop>
-        <MicaBackdrop />
+        <DesktopAcrylicBackdrop />
     </Window.SystemBackdrop>
 
-    <Grid Padding="24">
+    <Grid x:Name="LayoutRoot" Background="Transparent" Padding="24">
         <StackPanel Spacing="8"
                 VerticalAlignment="Center">
 
             <TextBlock
-            x:Name="GreetingText"
-            Text="Hello!"
-            FontSize="28"
-            FontWeight="SemiBold"
-             />
-
-            <TextBlock
-                Text="Your desktop, at a glance."
-                FontSize="14"
-                Opacity="0.7" 
+                x:Name="GreetingText"
+                Text="Hello!"
+                FontSize="28"
+                FontWeight="SemiBold"
              />
 
             <TextBlock
                 x:Name="ClockText"
-                Text="00:00"
+                Text="00:00:00"
                 FontSize="36"
                 FontWeight="SemiBold"
                 FontFamily="Consolas"
              />
+
+            <TextBlock
+                x:Name="DateText"
+                Text="DD MMM,  YYYY"
+                FontSize="36"
+                FontWeight="SemiBold"
+                FontFamily="Consolas"
+             />
+
+            <TextBlock
+                x:Name="RamUsage"
+                Text="RAM: --%"
+                FontSize="16"
+             />
+
+
 
         </StackPanel>
     </Grid>
